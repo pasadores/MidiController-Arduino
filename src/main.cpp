@@ -120,8 +120,8 @@ void screenRender(){
 void readButtons(){
   for (int i = 0; i < 6; i++){
     sensorValue[i] = digitalRead(pulsadores[i]);
-    lastSensorValue[i] = sensorValue[i];
     execute(i);
+    lastSensorValue[i] = sensorValue[i];
   }
 }
 void loop() {
